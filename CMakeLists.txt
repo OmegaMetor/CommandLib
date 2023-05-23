@@ -9,7 +9,7 @@ add_library(CommandLib
     src/EventLoop.cpp
 )
 
-add_custom_target(buildDocs
+add_custom_target(docs
     COMMAND doxygen Doxyfile
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
     VERBATIM)
