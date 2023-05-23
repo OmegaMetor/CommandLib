@@ -6,13 +6,13 @@ This library is meant to provide a simple and extensible framework to possibly h
 It is modeled after [WPILib's Command Based framework](https://docs.wpilib.org/en/stable/docs/software/commandbased/what-is-command-based.html) for programming FRC robots. This allows for loop based iteration logic to be written as a series of steps that begin and end based on their conditions.
 
 ### Structure
-This library contains a singleton [CommandScheduler](@ref Commands::CommandScheduler) class that provides the main functionality. The scheduler, accessed with [Commands::CommandScheduler.getInstance()](@ref Commands::CommandScheduler.getInstance), is used to run commands each iteration of the loop, manage scheduling commands, and prevent conflicting command dependencies.
+This library contains a singleton Commands::CommandScheduler class that provides the main functionality. The scheduler, accessed with Commands::CommandScheduler.getInstance(), is used to run commands each iteration of the loop, manage scheduling commands, and prevent conflicting command dependencies.
 
 There are 2 ways of creating commands. Both can be used together in the same project without problems. However, each method has it's own benifits.
 
 #### Subclassing
 
-Commands can be made by subclassing [Commands::Command](@ref Commands::Command). Commands have a `void run()` function that is run every loop of the scheduler. This is where all the main functionality of the command should go. In addition to this, the command has a `bool isFinished()` function. When this function returns true, the command will be ended and no longer ran.
+Commands can be made by subclassing Commands::Command. Commands have a `void run()` function that is run every loop of the scheduler. This is where all the main functionality of the command should go. In addition to this, the command has a `bool isFinished()` function. When this function returns true, the command will be ended and no longer ran.
 
 #### Functional
 
