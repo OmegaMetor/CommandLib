@@ -26,9 +26,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Set up CMake
-        uses: actions/setup-cmake@v1.13
-        with:
-          cmake-version: '3.22'
+        run: sudo apt install -y cmake
       - name: Set up Doxygen
         run: sudo apt install -y doxygen
       - name: Build and Generate Documentation
