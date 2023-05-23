@@ -1,5 +1,7 @@
 # CommandLib Documentation!
 
+You can find the full library docs [here](https://omegametor.github.io/CommandLib/), or you can browse the source code's comments. 
+
 ### Purpose
 This library is meant to provide a simple and extensible framework to possibly help simplify iteration based logic.
 
