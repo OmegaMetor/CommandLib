@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(CommandLib VERSION 0.1.0)
 
-include_directories(include)
+include_directories(include/CommandLib)
+
 add_library(CommandLib 
     src/CommandScheduler.cpp
     src/Command.cpp
