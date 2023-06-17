@@ -14,7 +14,7 @@ add_custom_target(docs
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
     VERBATIM)
 
-add_executable(CommandLibTest test/CommandLib.cpp)
+add_executable(CommandLibTest EXCLUDE_FROM_ALL test/CommandLib.cpp)
 target_link_libraries(CommandLibTest CommandLib)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
