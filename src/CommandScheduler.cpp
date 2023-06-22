@@ -90,7 +90,6 @@ namespace Commands {
 
         for (int object = 0; object < command->requirements.size(); object++)
         {
-            std::cout << object << std::endl;
             if (CommandScheduler::requirements.find(command->requirements.at(object)) != CommandScheduler::requirements.end()) {
                 Command* scheduledCommand = CommandScheduler::requirements.at(command->requirements[object]);
                 if (!scheduledCommand->interruptible) {
